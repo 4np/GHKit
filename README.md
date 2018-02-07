@@ -86,6 +86,17 @@ In order you test, you could change the interval to 10 seconds (`TimeInterval(ex
 
 `GHKit` will [Swizzle](http://nshipster.com/method-swizzling/) `UIViewController`'s `viewDidLoad` method to check for new releases _if_ the interval has passed. It uses the application bundle's version to check against the available GitHub releases and notify the end user if a new version is available. _Note that `GHKit` only reports that a new release is available; it does not download or install anything!_
 
+# Contributing to GHKit
+
+Before sending a pull request, make sure you used the same coding style and that you have linted your code using the most recent [SwiftLint](https://github.com/realm/SwiftLint) release:
+
+```
+$ swiftlint
+...
+Done linting! Found 0 violations, 0 serious in 11 files.
+```
+
+
 # License
 
 See the accompanying [LICENSE](LICENSE) for more information.
