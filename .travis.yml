@@ -1,0 +1,19 @@
+language: objective-c
+os: osx
+osx_image: xcode9
+env:
+    global:
+    - NSUnbufferedIO=YES
+install: ./bin/prepare.sh
+script:
+    - set -o pipefail
+    - swift --version
+    - swift package generate-xcodeproj
+    - xcodebuild -version
+    - xcodebuild -showsdks
+    - xcodebuild -list
+    - xcpretty -v
+    - swiftlint
+    - xcodebuild -scheme "GHKit-Package" -sdk "appletvsimulator11.0" -configuration Release clean build ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO RUN_CLANG_STATIC_ANALYZER=YES|xcpretty -c
+    - swift build
+    - swift test
