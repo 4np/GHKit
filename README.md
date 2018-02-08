@@ -29,7 +29,7 @@ pod 'NPOKit', :git => 'https://github.com/4np/GHKit.git'
 Add the following entry to your package's dependencies:
 
 ```swift
-.package(url: "https://github.com/4np/GHKit.git", from: "0.0.1")
+.package(url: "https://github.com/4np/GHKit.git", from: "0.0.2")
 ```
 
 ## Setup

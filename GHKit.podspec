@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'GHKit'
-  spec.version = '0.0.1'
+  spec.version = '0.0.2'
   spec.summary = 'GHKit framework for version checks using GitHub releases'
   spec.homepage = 'https://github.com/4np/GHKit'
   spec.license = { type: 'APACHE', file: 'LICENSE' }
