@@ -21,7 +21,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :tvos, '12.0'
 use_frameworks!
 
-pod 'NPOKit', :git => 'https://github.com/4np/GHKit.git'
+pod 'GHKit', :git => 'https://github.com/4np/GHKit.git'
 ```
 
 ### Swift Package Manager
